@@ -5,7 +5,7 @@ GITHUB_URL="https://github.com/"
 # update to use different git repo for legacy manifests
 MANIFEST_ORG="red-hat-data-services"
 # comment out below logic once we have all component manifests ready to get from source git repo
-MANIFEST_RELEASE="rhoai-2.7"
+MANIFEST_RELEASE="master"
 MANIFESTS_TARBALL_URL="${GITHUB_URL}/${MANIFEST_ORG}/odh-manifests/tarball/${MANIFEST_RELEASE}"
 
 # component: notebook, dsp, kserve, dashbaord, cf/ray, trustyai, modelmesh.
