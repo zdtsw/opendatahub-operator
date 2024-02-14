@@ -13,7 +13,6 @@ MANIFESTS_TARBALL_URL="${GITHUB_URL}/${MANIFEST_ORG}/odh-manifests/tarball/${MAN
 declare -A COMPONENT_MANIFESTS=(
     ["codeflare"]="red-hat-data-services:codeflare-operator:rhoai-2.7:config:codeflare"
     ["ray"]="red-hat-data-services:kuberay:rhoai-2.7:ray-operator/config:ray"
-    ["kueue"]="red-hat-data-services:kueue:rhoai-2.7:config:kueue"
     ["data-science-pipelines-operator"]="red-hat-data-services:data-science-pipelines-operator:rhoai-2.7:config:data-science-pipelines-operator"
     ["kf-notebook-controller"]="red-hat-data-services:kubeflow:rhoai-2.7:components/notebook-controller/config:odh-notebook-controller/kf-notebook-controller"
     ["odh-notebook-controller"]="red-hat-data-services:kubeflow:rhoai-2.7:components/odh-notebook-controller/config:odh-notebook-controller/odh-notebook-controller"
