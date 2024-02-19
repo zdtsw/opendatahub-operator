@@ -46,9 +46,6 @@ metadata:
               "ray": {
                 "managementState": "Removed"
               },
-              "trustyai": {
-                "managementState": "Managed"
-              },
               "workbenches": {
                 "managementState": "Managed"
               }
@@ -149,9 +146,6 @@ metadata:
               "managementState": "Removed"
             },
             "workbenches": {
-              "managementState": "Managed"
-            },
-            "trustyai": {
               "managementState": "Managed"
             }
           }
@@ -1771,7 +1765,7 @@ spec:
                 - --leader-elect
                 command:
                 - /manager
-                image: quay.io/wenzhou/opendatahub-operator:latest
+                image: REPLACE_IMAGE:latest
                 imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
