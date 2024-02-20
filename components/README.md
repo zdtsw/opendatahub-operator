@@ -60,5 +60,4 @@ can be found [here](https://github.com/opendatahub-io/opendatahub-operator/tree/
 - [KServe](https://github.com/opendatahub-io/opendatahub-operator/tree/main/components/kserve)
 - [ModelMesh Serving](https://github.com/opendatahub-io/opendatahub-operator/tree/main/components/modelmeshserving)
 - [Workbenches](https://github.com/opendatahub-io/opendatahub-operator/tree/main/components/workbenches)
-- [TrustyAI](https://github.com/opendatahub-io/opendatahub-operator/tree/main/components/trustyai)
 - [ModelRegistry](https://github.com/opendatahub-io/opendatahub-operator/tree/main/components/modelregistry)

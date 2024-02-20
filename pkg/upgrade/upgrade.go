@@ -688,15 +688,13 @@ func RemoveDeprecatedTrustyAI(cli client.Client, platform deploy.Platform) error
 		return nil
 	case 1:
 		existingDSC := existingDSCList.Items[0]
-		if platform == deploy.ManagedRhods || platform == deploy.SelfManagedRhods {
-			if existingDSC.Spec.Components.TrustyAI.ManagementState != operatorv1.Removed {
-				existingDSC.Spec.Components.TrustyAI.ManagementState = operatorv1.Removed
-				err := cli.Update(context.TODO(), &existingDSC)
-				if err != nil {
-					return fmt.Errorf("error updating TrustyAI component: %w", err)
-				}
+		if existingDSC.Spec.Components.TrustyAI.ManagementState != operatorv1.Removed {
+			existingDSC.Spec.Components.TrustyAI.ManagementState = operatorv1.Removed
+			err := cli.Update(context.TODO(), &existingDSC)
+			if err != nil {
+				return fmt.Errorf("error set TrustyAI component to Removed: %w", err)
 			}
-		}
+		}	
 	}
 	return nil
 }
